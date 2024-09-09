@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:  rgb(121, 230, 206);
+    color: #ededed;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 12px;
+    list-style: none;
+    text-decoration-line: none;
+}
+
+/* bagian perkenalan */
+.main {
+    margin: 40px 80px;
+}
+
+#introduction {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #D3BCCC;
+    padding-bottom: 24px;
+}
+
+#introduction img {
+    width: 300px;
+    height: 300px;
+}
+
+#introduction h2 {
+    font-size: 48px;
+}
+
+/* bagian portofolio */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:  rgb(121, 230, 206);
+}
+.project {}
+
+@media screen and (min-width: 10px) and (max-width:800px) {
+    #contact {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        color: #fff;
+        background: #fff;
+        position: relative;
+       
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:1400px) {
+    #contact {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        color: #fff;
+        background: #fff;
+    }
+}
+
+.hubungi {
+    background-color: black;
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color:  rgb(121, 230, 206);
+}
+
+form {
+    display: grid;
+    row-gap: 1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ededed;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #000;
+    border-radius: 0.4rem;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.form .kirim {
+    border: none;
+    outline: none;
+    background: rgb(121, 230, 206);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.form .kirim:hover {
+    background: hsla(221, 93%, 62%, 0.8);
+    transition: 0.3s all linear;
+}
+
+@media screen and (max-width:1200px) and (min-width:800) {
+    .hubungi {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}
+
+.gambar img {
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:700px) {
+    .hubungi {
+        margin: 0 auto;
+        width: 70%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 5rem !important;
+    }
+    .gambar img {
+        height: 100%;
+        width: 100%;
+    }
+}
