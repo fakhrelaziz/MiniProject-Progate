@@ -9,27 +9,29 @@
 }
 
 header {
-    background-color:  rgb(121, 230, 206);
+    background-color:  #795513;
     color: #ededed;
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    box-shadow: 0px 0px 10px black;
 }
 
 nav ul {
     display: flex;
     gap: 12px;
     list-style: none;
-    text-decoration: none;
 }
 
-nav ul li {
+nav ul li a{
     display: inline-block;
     padding: 0 12px;
     list-style: none;
-    text-decoration-line: none;
+    text-decoration: none;
+    color: #ededed;
+    
 }
 
 /* bagian perkenalan */
@@ -47,6 +49,7 @@ nav ul li {
 #introduction img {
     width: 300px;
     height: 300px;
+    box-shadow: 0 0 15px ;
 }
 
 #introduction h2 {
@@ -65,10 +68,24 @@ nav ul li {
 
 .project{
     border: 1px solid black;
-    border-radius: 10px;
-    background-color:  rgb(121, 230, 206);
+    background-color:  #795513;
+    box-shadow: 10px 10px 0px black;
 }
-.project {}
+.project img{
+    box-shadow: 1px 1px 1px white;
+}
+
+.project h3, h4{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+
+}
+.project h4 {
+    background-color: red;
+    position: relative;
+    margin-left: 100px;
+}
 
 @media screen and (min-width: 10px) and (max-width:800px) {
     #contact {
@@ -108,7 +125,7 @@ nav ul li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    box-shadow: 0px 0px 5px hsl(0, 0%, 39%);
     border-radius: 0.5rem;
     overflow: hidden;
 }
@@ -121,7 +138,7 @@ nav ul li {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color:  rgb(121, 230, 206);
+    color: #795513;
 }
 
 form {
@@ -149,7 +166,7 @@ form textarea {
 .form .kirim {
     border: none;
     outline: none;
-    background: rgb(121, 230, 206);
+    background: #795513;
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -186,4 +203,13 @@ form textarea {
         height: 100%;
         width: 100%;
     }
+}
+
+footer {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #795513;
+    font-size: 13px;
 }
